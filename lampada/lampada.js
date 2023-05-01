@@ -1,5 +1,4 @@
-const btn_ligar=document.getElementById("btn_ligar")
-const btn_desligar=document.getElementById("btn_desligar")
+const btn_On_Off=document.getElementById("btn_On_Off")
 const lamp=document.getElementById("lamp")
 
 function lam_quebrada_sn() {
@@ -19,16 +18,24 @@ function lamp_ligada () {
 }
 
 function lamp_quebrada () {
+    if(!lam_quebrada_sn()){
     lamp.src = 'img/lampada-quebrada.png'
+    }
 }
 
- btn_ligar.addEventListener("click",()=>{
-    lamp_ligada()
-})
+function lamp_on_off () {
+    if(btn_On_Off.textContent == 'Ligar'){
+        lamp_ligada()
+        btn_On_Off.textContent = 'Desligar'
+    }else{
+        lamp_desligada()
+        btn_On_Off.textContent = 'Ligar'
+    }
+}
 
- btn_desligar.addEventListener("click",()=>{
-     lamp_desligada()
- })
+ btn_On_Off.addEventListener("click",()=>{
+    lamp_on_off()
+})
 
  lamp.addEventListener("mouseover",()=>{
      lamp_ligada()
