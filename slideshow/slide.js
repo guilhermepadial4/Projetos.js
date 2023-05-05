@@ -13,7 +13,8 @@ const containerItems=document.querySelector("#container-items")
 
 const loadImages=(images,container)=>{
     images.forEach(image=>{
-        container.innerHTML+=`
+        container.innerHTML+=
+        `
         <div class='item'>
             <img src='${image.url}'
         </div>
