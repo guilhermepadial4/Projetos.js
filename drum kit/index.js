@@ -1,6 +1,6 @@
 "use strict";
 
-const container=document.getElementById("container")
+const container=document.getElementById("container");
 
 const sounds={
     "A":'boom.wav',
@@ -60,4 +60,4 @@ display(sounds);
 
 container.addEventListener("click",activate_div);
 
-window.addEventListener("keydown",activate_div)
+window.addEventListener("keydown",activate_div);
