@@ -4,7 +4,7 @@ const todoList=document.querySelector("#todo-list");
 const editForm=document.querySelector("#edit-form");
 const editInput=document.querySelector("#edit-input");
 const cancelEditBtn=document.querySelector("#cancel-edit-btn");
-
+const finish=document.querySelector(".finisih-todo")
 
 const saveTodo=(text)=>{
     const todo=document.createElement("div");
@@ -43,4 +43,8 @@ todoForm.addEventListener("submit",(evt)=>{
     if(inputValue){
         saveTodo(inputValue);
     }
+});
+
+finish.addEventListener("click",(evt)=>{
+    parent.classList.add("done");
 });
