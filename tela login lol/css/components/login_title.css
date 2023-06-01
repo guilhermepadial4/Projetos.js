@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.login__title{
+    color: var(--deep-grey);
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+

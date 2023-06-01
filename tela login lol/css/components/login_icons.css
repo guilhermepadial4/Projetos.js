@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.login__icons{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login__icons img{
+    width: 20px;
+}

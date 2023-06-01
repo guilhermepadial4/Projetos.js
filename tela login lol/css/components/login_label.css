@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.login__label{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.login__label span{
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+.login__label .span-active{
+    font-size: 0.7em;
+    margin: 8px 10px ;
+}
