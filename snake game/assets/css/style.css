@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+*{
+    font-family: 'Poppings', sans-serif;
+}
+
+body{
+    background-color: #191919;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.canva{
+    background-color: #111;
+    width: 520px;
+}
