@@ -9,13 +9,26 @@ const randonNumber = (max, min) => {
     return Math.round(Math.random() * (max - min) + min);
 }
 
-const food = {
-    x: randonNumber(0, 570),
-    y: randonNumber(0, 570),
-    color: "orange"
+const randonPosition = () => {
+    const number = randonNumber(0, canvas.width - size);
+    return Math.round(number / 30) * 30;
 }
 
-let direction, loopId = ''
+const randonColor = () => {
+    const red = randonNumber(0, 255);
+    const green = randonNumber(0, 255);
+    const blue = randonNumber(0, 255);
+
+    return `rgb(${red}, ${green}, ${blue})`;
+}
+
+const food = {
+    x: randonPosition(),
+    y: randonPosition(),
+    color: randonColor()
+}
+
+let direction, loopId = '';
 
 const drawFood = () => {
 
