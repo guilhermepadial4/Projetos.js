@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: #191919;
     display: flex;
     min-height: 100vh;
@@ -15,44 +15,45 @@ body{
     color: white;
 }
 
-.canva{
+.canva {
     background-color: #111;
     width: 520px;
 }
 
-.score{
+.score {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.8rem;
 }
 
-.score_value{
+.score_value {
     font-weight: 700;
     font-size: 4.5rem;
     display: block;
     margin-top: -10px;
 }
 
-.menu_screen{
+.menu_screen {
     position: absolute;
     display: none;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 
-.game_over{
+.game_over {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 3rem;
 }
 
-.final_score{
+.final_score {
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.btn_play{
+.btn_play {
     border: none;
     border-radius: 100px;
     padding: 10px 15px 10px 12px;

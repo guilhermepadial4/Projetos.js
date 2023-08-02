@@ -1,14 +1,22 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
+
+const score = document.querySelector(".score_value");
+const finalScore = document.querySelector(".final_score > span");
+const menu = document.querySelector(".menu_screen");
+const btnPlay = document.querySelector(".btn_play");
+
 const audio = new Audio('./assets/audio.mp3');
+
 const size = 30;
-const snake = [
-    { x: 270, y: 240 },
-    { x: 300, y: 240 },
-    { x: 330, y: 240 },
-    { x: 360, y: 240 },
-    { x: 390, y: 240 }
-]
+
+const initialPosition = { x: 270, y: 240 }
+
+let snake = [initialPosition]
+
+const incrementScore = () => {
+    score.innerText = +score.innerText + 10;
+}
 
 const randonNumber = (max, min) => {
     return Math.round(Math.random() * (max - min) + min);
@@ -37,7 +45,7 @@ let direction, loopId = '';
 
 const drawFood = () => {
 
-    const { x, y, color } = food
+    const { x, y, color } = food;
 
     ctx.shadowColor = color;
     ctx.shadowBlur = 6;
@@ -65,19 +73,19 @@ const moveSnake = () => {
     const head = snake[snake.length - 1];
 
     if (direction == 'right') {
-        snake.push({ x: head.x + size, y: head.y })
+        snake.push({ x: head.x + size, y: head.y });
     }
 
     if (direction == 'left') {
-        snake.push({ x: head.x - size, y: head.y })
+        snake.push({ x: head.x - size, y: head.y });
     }
 
     if (direction == 'down') {
-        snake.push({ x: head.x, y: head.y + size })
+        snake.push({ x: head.x, y: head.y + size });
     }
 
     if (direction == 'up') {
-        snake.push({ x: head.x, y: head.y - size })
+        snake.push({ x: head.x, y: head.y - size });
     }
 
     snake.shift();
@@ -104,6 +112,7 @@ const checkEat = () => {
     const head = snake[snake.length - 1];
 
     if (head.x == food.x && head.y == food.y) {
+        incrementScore();
         snake.push(head);
         audio.play();
 
@@ -128,8 +137,8 @@ const checkCollision = () => {
 
     const wallCollision = head.x < 0 || head.x > 570 || head.y < 0 || head.y > 570;
 
-    const selfCollision = snake.find((position, index)=>{
-        return index < neckIndex && position.x == head.x && position.y == head.y
+    const selfCollision = snake.find((position, index) => {
+        return index < neckIndex && position.x == head.x && position.y == head.y;
     })
 
     if (wallCollision || selfCollision) {
@@ -138,7 +147,11 @@ const checkCollision = () => {
 }
 
 const gameOver = () => {
-    direction = undefined
+    direction = undefined;
+
+    menu.style.display = "flex";
+    finalScore.innerText = score.innerText;
+    canvas.style.filter = "blur(2px)";
 }
 
 const gameLoop = () => {
@@ -174,4 +187,12 @@ document.addEventListener("keydown", ({ key }) => {
     if (key == "ArrowLeft" | key == "a" | key == "A" && direction != "right") {
         direction = "left";
     }
+})
+
+btnPlay.addEventListener("click", () => {
+    score.innerText = "00";
+    menu.style.display = "none";
+    canvas.style.filter = "none";
+
+    snake = [initialPosition];
 })
