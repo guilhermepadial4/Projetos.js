@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 *{
-    font-family: 'Poppings', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -18,4 +18,51 @@ body{
 .canva{
     background-color: #111;
     width: 520px;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.score_value{
+    font-weight: 700;
+    font-size: 4.5rem;
+    display: block;
+    margin-top: -10px;
+}
+
+.menu_screen{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game_over{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.final_score{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.btn_play{
+    border: none;
+    border-radius: 100px;
+    padding: 10px 15px 10px 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
 }
