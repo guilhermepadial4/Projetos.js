@@ -1,0 +1,82 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image__logo {
+    height: 12rem;
+
+    margin-top: 0.5rem;
+}
+
+.main__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.div__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #025951;
+
+    width: 40%;
+    height: 100%;
+
+    margin-top: 1.5rem;
+}
+
+.div__container > label {
+    margin-top: 1rem;
+    color: #131617;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.div__container > select {
+    width: 50%;
+    height: 2.9rem;
+
+    border: 1px solid #000;
+    border-radius: 0.3125rem;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+    text-align: start; 
+    padding-left: calc(0.5rem + 9px);
+}
+
+.div__container > input {
+    width: 47%;
+    height: 2.9rem;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+    border: 1px solid #000;
+    border-radius: 0.3125rem;
+
+    text-align: start; 
+    padding-left: calc(0.5rem + 9px);
+}
+
+.convert__button {
+    width: 51%;
+    height: 2.9rem;
+
+    margin-top: 1rem;
+
+    font-size: 1rem;
+
+    border: 1px solid #000;
+    border-radius: 0.3125rem;
+
+    cursor: pointer;
+}

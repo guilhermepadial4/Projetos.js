@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="src/styles/index.css" />
+
+    <!-- link JS -->
+    <script defer type="module" src="src/scripts/index.js"></script>
+
+    <title>Conversor Monetário</title>
+  </head>
+  <body>
+
+    <header class="header__container">
+        <button class="mode__controller">Test</button>
+    
+        <img class="image__logo" src="src/assets/image/logo.png" alt="Imagem do Logo Conversão Monetária">
+    </header>
+
+    <main class="main__container">
+        <div class="div__container">
+
+            <label>Converter <b>de</b></label>
+
+            <select name="real" id="currencyReal">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="libra">£ Libra Esterlina</option>
+                <option value="yuan">¥ Yuan</option>
+            </select>
+
+            <label>Converter <b>para</b></label>
+
+            <select name="real" id="currencyFor">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="libra">£ Libra Esterlina</option>
+                <option value="yuan">¥ Yuan</option>
+            </select>
+
+            <label for=""><b>Valor</b></label>
+            
+            <input type="text" placeholder="R$ 10.000.00">
+
+            <button class="convert__button">Converter</button>
+        </div>
+    </main>
+  </body>
+</html>
