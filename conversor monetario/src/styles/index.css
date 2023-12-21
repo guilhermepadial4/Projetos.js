@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     
+    
 }
 
 .div__container {
@@ -25,9 +26,11 @@
     background-color: #025951;
 
     width: 40%;
-    height: 100%;
+    height: 1%;
 
     margin-top: 1.5rem;
+
+    border-radius: 10px;
 }
 
 .div__container > label {
@@ -40,21 +43,25 @@
 }
 
 .div__container > select {
-    width: 50%;
+    width: 80%;
     height: 2.9rem;
 
     border: 1px solid #000;
     border-radius: 0.3125rem;
 
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 
     text-align: start; 
     padding-left: calc(0.5rem + 9px);
+
+    appearance: none;
+
+    cursor: pointer;
 }
 
 .div__container > input {
-    width: 47%;
+    width: 77%;
     height: 2.9rem;
 
     font-size: 1rem;
@@ -68,7 +75,7 @@
 }
 
 .convert__button {
-    width: 51%;
+    width: 80%;
     height: 2.9rem;
 
     margin-top: 1rem;
@@ -79,4 +86,52 @@
     border-radius: 0.3125rem;
 
     cursor: pointer;
+
+    background-color: #06702b;
+
+    font-size: 1.2rem;
+}
+
+.section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 1.5rem;
+
+    width: 50%;
+    height: 100%;
+
+    border: 1.5px solid rgb(47, 0, 255);
+
+    border-radius: 10px;
+    position: relative;
+}
+
+.image__arrow {
+    margin-top: 0.3125rem;
+    
+    
+    width: 2rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div__national_1 {
+    margin-top: 1rem;
+
+    font-size: 1.1rem;
+}
+
+.div__national {
+    margin-top: 3rem;
+
+    margin-bottom: 1rem;
+
+    font-size: 1.1rem;
 }
