@@ -2,6 +2,7 @@
 
 
 :root {
+    --black-900: #000000;
     --blue-700: #012840;
     --blue-600: #024959;
     --blue-400: #6A8FD9;
@@ -18,12 +19,12 @@
 }
 
 body {
-    background-color: var(--blue-700);
+    background-color: var(--black-900);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
-    color: var(--title-color);
+    color: var(--grey-100);
 }
 
 p {

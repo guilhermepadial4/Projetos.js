@@ -11,8 +11,48 @@
     <title>Consulte seu IMC</title>
 </head>
 <body>
-    <h1>Calculadora de IMC</h1>
 
-    <img src="src/assets/images/WhatsApp Image 2024-01-19 at 11.42.33_594d6476.jpg" alt="">
+    <img class="image__couple" src="src/assets/images/couple-fitness.jpg" alt="Figura de um casal Fitness">
+
+    <div class="calculator">
+        <h1>Calculadora - IMC</h1>
+        <div class="line"></div>
+        <div class="input-group">
+          <label for="weight">Peso em kg</label>
+          <div class="field-group">
+            <input
+              type="text"
+              name="weight"
+              class="input-field"
+              id="weight"
+              placeholder="60"
+              autocomplete="off"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-weight-hanging" aria-hidden="true"></i>
+            </div>
+            <p class="measure">Kg</p>
+          </div>
+        </div>
+  
+        <div class="input-group">
+          <label for="height">Altura em centímetros</label>
+          <div class="field-group">
+            <input
+              type="text"
+              name="height"
+              class="input-field"
+              id="height"
+              placeholder="165"
+              autocomplete="off"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-ruler" aria-hidden="true"></i>
+            </div>
+            <p class="measure">cm</p>
+          </div>
+        </div>
+  
+        <button>Calcular</button>
 </body>
 </html>
