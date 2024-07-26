@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container__main {
+  display: flex;
+}
+
+.container__register_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 50vw;
+  height: 100vh;
+}
+
+.title__register {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.container__form {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 50px;
+}
+
+.label__form {
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-top: 20px;
+}
+
+.input__form {
+  font-size: 14px;
+  font-weight: 500;
+
+  border: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+
+  width: 300px;
+  height: 10px;
+
+  outline: none;
+
+  margin-top: 5px;
+
+  padding: 10px;
+}
+
+.input__form::placeholder {
+  color: #d9d9d9;
+}
+
+.container__check {
+  font-weight: 500;
+
+  margin-top: 20px;
+}
+
+.container__check > input {
+  cursor: pointer;
+}
+
+.container__check > label > a {
+  color: #000;
+}
+
+.btn__submit {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #3a5b22;
+
+  height: 30px;
+
+  margin-top: 30px;
+
+  padding: 6px 0 6px 0;
+
+  cursor: pointer;
+}
+
+.paragraph__or {
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-top: 50px;
+}
+
+.container__method {
+  display: flex;
+
+  margin-top: 30px;
+
+  gap: 10px;
+}
+
+.container__method_options {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+
+  padding: 7px 10px 7px 10px;
+
+  cursor: pointer;
+}
+
+.container__method_options > p {
+  margin-left: 10px;
+}
+
+.paragraph__sign {
+  font-size: 16px;
+  font-weight: 500;
+
+  margin-top: 20px;
+}
+
+.paragraph__sign > a {
+  color: #0f3dde;
+  text-decoration: none;
+}
+
+.container__image_right {
+  width: 50vw;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.container__image_right > img {
+  width: 50vw;
+  height: 100vh;
+}
