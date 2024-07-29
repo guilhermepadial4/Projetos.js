@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Login Green</title>
+  </head>
+  <body>
+    <main class="container__main">
+      <section class="container__login_left">
+        <h2 class="title__login">Welcome Back!</h2>
+        <p class="paragraph__description">Enter your Credentials to access your account</p>
+
+        <form class="container__form">
+          <label class="label__form">Email address</label>
+          <input class="input__form" type="email" placeholder="Enter your email" />
+
+          <label class="label__form">Password <a href="#" class="forgot">Forgot password</a></label>
+
+          <input class="input__form" type="password" placeholder="Enter your password" />
+
+          <div class="container__check">
+            <input class="test" type="checkbox" />
+            <label>Remember for 30 days</label>
+          </div>
+
+          <button class="btn__submit" type="submit">Login</button>
+        </form>
+
+        <p class="paragraph__or">Or</p>
+
+        <div class="container__method">
+          <div class="container__method_options">
+            <img src="src/icons/google.svg" alt=" icon Google" />
+            <p>Sign in with Google</p>
+          </div>
+
+          <div class="container__method_options">
+            <img src="src/icons/apple.svg" alt="icon Apple" />
+            <p>Sign in with Apple</p>
+          </div>
+        </div>
+
+        <p class="paragraph__sign">Don’t have an account? <a href="#">Sign Up</a></p>
+      </section>
+
+      <section class="container__image_right">
+        <img src="src/image/side.png" alt="Image Side " />
+      </section>
+    </main>
+  </body>
+</html>
