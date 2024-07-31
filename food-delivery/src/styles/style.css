@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.container__nav {
+  width: 50%;
+}
+
+.container__nav > img {
+  margin: 20px 0 0 150px;
+}
+
+.container__left {
+  width: 50%;
+
+  margin: 60px 0 0 150px;
+}
+
+.title__main {
+  font-size: 60px;
+  font-weight: 600;
+  color: #2b2b43;
+}
+
+.paragraph__description {
+  width: 350px;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #545563;
+
+  margin-top: 16px;
+}
+
+.container__form {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 30px;
+}
+
+.label__form {
+  font-size: 16px;
+  font-weight: 600;
+  color: #545563;
+
+  margin-bottom: 4px;
+}
+
+.input__form {
+  font-size: 14px;
+  color: #2b2b43;
+
+  border: 1px solid #c7c8d2;
+  border-radius: 8px;
+
+  outline: none;
+
+  padding: 12px;
+
+  width: 350px;
+
+  margin-bottom: 20px;
+}
+
+.input__form::placeholder {
+  color: #83859c;
+}
+
+.input-icon {
+  position: relative;
+
+  width: fit-content;
+}
+
+.input-icon i {
+  position: absolute;
+  transform: translateY(-50%);
+
+  right: 20px;
+  top: 35%;
+
+  color: #c7c8d2;
+
+  cursor: pointer;
+}
+
+.container__check {
+  font-weight: 500;
+  color: #2b2b43;
+
+  font-weight: 500;
+
+  margin-top: 15px;
+}
+
+.container__check > input {
+  cursor: pointer;
+}
+
+.btn__login {
+  width: 376px;
+  height: 40px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+
+  padding: 12px 0 12px 0;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #4e60ff;
+
+  margin-top: 40px;
+
+  cursor: pointer;
+}
+
+.forgot__pass {
+  width: 376px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #4e60ff;
+
+  border: none;
+  background-color: transparent;
+
+  margin-top: 20px;
+
+  cursor: pointer;
+}
+
+.create__account {
+  width: 376px;
+
+  font-size: 15px;
+  font-weight: 400;
+  color: #545563;
+
+  border: none;
+  background-color: transparent;
+
+  margin-top: 40px;
+}
+
+.emphasis {
+  font-weight: 600;
+  color: #4e60ff;
+  
+  cursor: pointer;
+}
