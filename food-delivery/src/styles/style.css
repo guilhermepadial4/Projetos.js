@@ -6,12 +6,9 @@ body {
 
 .container__nav {
   width: 30%;
-
-  background-color: red;
 }
 
 .container__main {
-  
   display: flex;
 }
 
@@ -22,9 +19,7 @@ body {
 .container__left {
   width: 30%;
 
-  /* background-color: red; */
-
-  margin: 60px 0 0 150px;
+  margin: 35px 100px 0 150px;
 }
 
 .title__main {
@@ -124,7 +119,7 @@ body {
 
   background-color: #4e60ff;
 
-  margin-top: 40px;
+  margin-top: 25px;
 
   cursor: pointer;
 }
@@ -154,21 +149,144 @@ body {
   border: none;
   background-color: transparent;
 
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .emphasis {
   font-weight: 600;
   color: #4e60ff;
-  
+
   cursor: pointer;
 }
 
 .container__right {
   width: 100%;
-  height: 100px;
+  height: 100vh;
 
   margin-top: -63px;
 
-  background-color: #697BFF;
+  background-color: #697bff;
+}
+
+.container__overall_rating {
+  width: 310px;
+  height: 430px;
+
+  background-color: #fff;
+
+  border-radius: 15px;
+
+  margin: 30px 0 0 95px;
+}
+
+.spet__bar {
+  position: relative;
+  /* height: 100%; */
+}
+
+.spet__bar > h2 {
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #2b2b43;
+
+  padding: 14px;
+}
+
+.btn__review {
+  width: 100px;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: #4e60ff;
+
+  background-color: transparent;
+
+  border: 1.5px solid #4e60ff;
+  border-radius: 10px;
+
+  padding: 10px;
+
+  cursor: pointer;
+
+  align-items: end;
+
+  position: absolute;
+  left: 190px;
+
+  margin-top: -30px;
+}
+
+.container__nota {
+  display: flex;
+
+  gap: 10px;
+}
+
+.nota {
+  font-size: 24px;
+  font-weight: 500;
+  color: #4e60ff;
+
+  margin-left: 14px;
+}
+
+.votes {
+  font-size: 9px;
+  font-weight: 700;
+  color: #83859c;
+
+  margin-top: 8px;
+}
+
+.bar {
+  width: 100%;
+  height: 1px;
+  background-color: #edeef2;
+
+  margin-top: 15px;
+}
+
+.container__sort {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 10px;
+}
+
+.btn__sort {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2b2b43;
+
+  border: 2px solid #c7c8d2;
+  border-radius: 8px;
+
+  background-color: transparent;
+
+  padding: 10px 30px 10px 15px;
+}
+
+.emphasis__sort {
+  color: #83859c;
+}
+
+.btn__icon {
+  position: relative;
+
+  width: fit-content;
+}
+
+.btn__icon > i {
+  font-size: 12px;
+
+  position: absolute;
+  transform: translateY(-50%);
+
+  right: 10px;
+  top: 55%;
+
+  color: #83859c;
+
+  cursor: pointer;
 }
