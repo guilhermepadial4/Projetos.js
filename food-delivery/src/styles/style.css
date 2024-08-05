@@ -13,60 +13,60 @@ body {
 }
 
 .container__nav > img {
-  margin: 20px 0 0 150px;
+  margin: 1.25rem 0 0 9.375rem;
 }
 
 .container__left {
   width: 30%;
 
-  margin: 35px 100px 0 150px;
+  margin: 2.1875rem 6.25rem 0 9.375rem;
 }
 
 .title__main {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 600;
   color: #2b2b43;
 }
 
 .paragraph__description {
-  width: 350px;
+  width: 21.875rem;
 
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: #545563;
 
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .container__form {
   display: flex;
   flex-direction: column;
 
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .label__form {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: #545563;
 
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 
 .input__form {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #2b2b43;
 
-  border: 1px solid #c7c8d2;
-  border-radius: 8px;
+  border: 0.0625rem solid #c7c8d2;
+  border-radius: 0.5rem;
 
   outline: none;
 
-  padding: 12px;
+  padding: 0.75rem;
+  
+  width: 25.7vw;
 
-  width: 350px;
-
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .input__form::placeholder {
@@ -83,7 +83,7 @@ body {
   position: absolute;
   transform: translateY(-50%);
 
-  right: 20px;
+  right: 1.25rem;
   top: 35%;
 
   color: #c7c8d2;
@@ -97,7 +97,7 @@ body {
 
   font-weight: 500;
 
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 .container__check > input {
@@ -105,51 +105,51 @@ body {
 }
 
 .btn__login {
-  width: 376px;
-  height: 40px;
+  width: 23.5rem;
+  height: 2.5rem;
 
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: #fff;
 
-  padding: 12px 0 12px 0;
+  padding: 0.75rem 0 0.75rem 0;
 
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
   background-color: #4e60ff;
 
-  margin-top: 25px;
+  margin-top: 1.5625rem;
 
   cursor: pointer;
 }
 
 .forgot__pass {
-  width: 376px;
+  width: 23.5rem;
 
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: #4e60ff;
 
   border: none;
   background-color: transparent;
 
-  margin-top: 20px;
+  margin-top: 1.25rem;
 
   cursor: pointer;
 }
 
 .create__account {
-  width: 376px;
+  width: 23.5rem;
 
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
   color: #545563;
 
   border: none;
   background-color: transparent;
 
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .emphasis {
@@ -163,108 +163,107 @@ body {
   width: 100%;
   height: 100vh;
 
-  margin-top: -63px;
+  margin-top: -3.9375rem;
 
   background-color: #697bff;
 }
 
 .container__overall_rating {
-  width: 310px;
-  height: 430px;
+  width: 19.375rem;
+  height: 26.875rem;
 
   background-color: #fff;
 
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 
-  margin: 30px 0 0 95px;
+  margin: 1.875rem 0 0 5.9375rem;
 }
 
 .spet__bar {
   position: relative;
-  /* height: 100%; */
 }
 
 .spet__bar > h2 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 
   color: #2b2b43;
 
-  padding: 14px;
+  padding: 0.875rem;
 }
 
 .btn__review {
-  width: 100px;
+  width: 6.25rem;
 
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   color: #4e60ff;
 
   background-color: transparent;
 
-  border: 1.5px solid #4e60ff;
-  border-radius: 10px;
+  border: 0.0938rem solid #4e60ff;
+  border-radius: 0.625rem;
 
-  padding: 10px;
+  padding: 0.625rem;
 
   cursor: pointer;
 
   align-items: end;
 
   position: absolute;
-  left: 190px;
+  left: 11.875rem;
 
-  margin-top: -30px;
+  margin-top: -1.875rem;
 }
 
 .container__nota {
   display: flex;
 
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .nota {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #4e60ff;
 
-  margin-left: 14px;
+  margin-left: 0.875rem;
 }
 
 .votes {
-  font-size: 9px;
+  font-size: 0.5625rem;
   font-weight: 700;
   color: #83859c;
 
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 .bar {
   width: 100%;
-  height: 1px;
+  height: 0.0625rem;
   background-color: #edeef2;
 
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 .container__sort {
   display: flex;
   justify-content: center;
 
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .btn__sort {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   color: #2b2b43;
 
-  border: 2px solid #c7c8d2;
-  border-radius: 8px;
+  border: 0.125rem solid #c7c8d2;
+  border-radius: 0.5rem;
 
   background-color: transparent;
 
-  padding: 10px 30px 10px 15px;
+  padding: 0.625rem 1.875rem 0.625rem 0.9375rem;
 }
 
 .emphasis__sort {
@@ -278,12 +277,12 @@ body {
 }
 
 .btn__icon > i {
-  font-size: 12px;
+  font-size: 0.75rem;
 
   position: absolute;
   transform: translateY(-50%);
 
-  right: 10px;
+  right: 0.625rem;
   top: 55%;
 
   color: #83859c;
@@ -292,7 +291,7 @@ body {
 }
 
 .container__review {
-  margin: 20px 0 0 18px;
+  margin: 1.25rem 0 0 1.125rem;
 }
 
 .container__review > img {
@@ -306,11 +305,11 @@ body {
 .title__name {
   display: inline;
 
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 700;
   color: #2b2b43;
 
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 .stars__nota {
@@ -324,22 +323,22 @@ body {
 }
 
 .votes__review {
-  font-size: 9px;
+  font-size: 0.5625rem;
   font-weight: 700;
   color: #83859c;
 
   margin-top: 1.15rem;
-  margin-left: 8px;
+  margin-left: 0.5rem;
 }
 
 .paragraph__review {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.09px;
+  line-height: 1rem;
+  letter-spacing: 0.0056rem;
   color: #2b2b43;
 
-  width: 220px;
+  width: 13.75rem;
 
   margin-left: 2.8125rem;
 }
@@ -351,28 +350,27 @@ body {
 }
 
 .jowel {
-  height: 15px;
+  height: 0.9375rem;
 }
 
 .number__jowel_up {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   color: #545563;
 
-  margin: 2px 0 0 7px;
+  margin: 0.125rem 0 0 0.4375rem;
 }
 
 .jowel__down {
-  height: 17px;
+  height: 1.0625rem;
 
-
-  margin-left: 15px;
+  margin-left: 0.9375rem;
 }
 
 .number__jowel_down {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   color: #83859c;
 
-  margin: 2px 0 0 7px;
+  margin: 0.125rem 0 0 0.4375rem;
 }
