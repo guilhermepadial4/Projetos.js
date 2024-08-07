@@ -92,10 +92,13 @@ body {
 }
 
 .container__check {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   color: #2b2b43;
 
-  font-weight: 500;
+  gap: 0.3125rem;
 
   margin-top: 0.9375rem;
 }
@@ -149,7 +152,7 @@ body {
   border: none;
   background-color: transparent;
 
-  margin-top: 1.25rem;
+  margin-top: 4.5rem;
 }
 
 .emphasis {
@@ -168,6 +171,12 @@ body {
   background: linear-gradient(to bottom, #697bff 0%, #5461cc 50%, #697bff 100%);
 }
 
+.test {
+  display: flex;
+
+  gap: 1.875rem;
+}
+
 .container__overall_rating {
   width: 19.375rem;
   height: 26.875rem;
@@ -176,7 +185,7 @@ body {
 
   border-radius: 0.9375rem;
 
-  margin: 1.875rem 0 0 5.9375rem;
+  margin: 1.175rem 0 0 4rem;
   position: relative;
 }
 
@@ -376,6 +385,76 @@ body {
   margin: 0.125rem 0 0 0.4375rem;
 }
 
+.card__product {
+  width: 16.25rem;
+  height: 100%;
+
+  background-color: #fff;
+
+  border-radius: 0.625rem;
+
+  margin-top: 3.4375rem;
+}
+
+.card__product > img {
+  width: 16.25rem;
+
+  border-radius: 1.25rem;
+
+  padding-top: 0.8125rem;
+  padding-left: 0.8125rem;
+  padding-right: 0.8125rem;
+}
+
+.card__product > h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.005rem;
+  color: #2b2b43;
+
+  padding-top: 0.625rem;
+  padding-left: 0.8125rem;
+}
+
+.description__side {
+  width: 90%;
+
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.0106rem;
+  line-height: 1.3;
+  color: #83859c;
+
+  padding-top: 0.3125rem;
+  padding-left: 0.8125rem;
+}
+
+.icon__add > .price {
+  padding-left: 0.8125rem;
+  padding-bottom: 0.8125rem;
+}
+
+.icon__add {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.icon__add > i {
+  color: #4e60ff;
+
+  background-color: #f3f4ff;
+
+  padding: 0.625rem;
+
+  border-radius: 0.625rem;
+
+  margin-right: 0.8125rem;
+
+  cursor: pointer;
+}
+
 .container__product {
   display: flex;
 
@@ -387,11 +466,11 @@ body {
   border-radius: 0.8125rem;
 
   position: absolute;
-  margin-top: -3.4375rem;
+  margin-top: -4.5rem;
 
   box-shadow: 0 -0.9375rem 0.5rem -0.5rem rgba(0, 0, 0, 0.3);
 
-  margin-left: 4.0625rem;
+  margin-left: 2rem;
 }
 
 .container__product > img {
@@ -404,7 +483,7 @@ body {
 .container__description_product > h2 {
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.08px;
+  letter-spacing: 0.005rem;
   color: #2b2b43;
 
   margin-top: 1.25rem;
@@ -413,22 +492,22 @@ body {
 .description__product {
   font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.0106rem;
   line-height: 1.3;
   color: #83859c;
 
-  width: 290px;
+  width: 18.125rem;
 
-  margin-top: 5px;
+  margin-top: 0.3125rem;
 }
 
 .price {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
-  letter-spacing: 0.08px;
+  letter-spacing: 0.005rem;
   color: #2b2b43;
 
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .add__product {
@@ -437,31 +516,31 @@ body {
   justify-content: center;
   align-items: center;
 
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .add {
   display: flex;
 
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .add > p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.08px;
+  letter-spacing: 0.005rem;
   color: #2b2b43;
 }
 
 .minus {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #c7c8d2;
 
   cursor: pointer;
 }
 
 .plus {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #2b2b43;
 
   cursor: pointer;
@@ -471,9 +550,9 @@ body {
   display: flex;
   align-items: center;
 
-  height: 35px;
+  height: 2.1875rem;
 
-  border-radius: 10px;
+  border-radius: 0.625rem;
 
   background-color: #f3f4ff;
 
@@ -481,16 +560,46 @@ body {
 }
 
 .add__cart > i {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #4e60ff;
 
-  padding-left: 15px;
+  padding-left: 0.9375rem;
 }
 
 .add__cart > p {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   color: #4e60ff;
 
-  padding: 10px;
+  padding: 0.625rem;
+}
+
+.container__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 4.5rem;
+}
+
+.container__bottom > h1 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.container__bottom > p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.0006rem;
+  line-height: 1.5;
+  color: #fff;
+
+  text-align: center;
+
+  width: 34.375rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1.6rem;
 }
