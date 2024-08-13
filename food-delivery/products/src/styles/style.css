@@ -154,12 +154,14 @@ body {
 .container__deserty {
   display: flex;
 
-  width: 550px;
-  height: 188px;
+  width: 34.375rem;
+  height: 11.75rem;
 
   background-color: #f3f4ff;
 
-  border-radius: 16px;
+  border-radius: 1rem;
+
+  cursor: pointer;
 }
 
 .description__deserty {
@@ -168,41 +170,43 @@ body {
 }
 
 .all {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 1.75rem;
   color: #2b2b43;
 
-  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
 .discount {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
-  line-height: 56px;
+  line-height: 3.5rem;
   color: #4e60ff;
 
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
-.category {
-  font-size: 14px;
+.type {
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: #83859c;
 
-  margin-top: 36px;
+  margin-top: 2.25rem;
 }
 
 .container__fooddie {
   display: flex;
 
-  width: 550px;
-  height: 188px;
+  width: 34.375rem;
+  height: 11.75rem;
 
   background-color: #fff3ed;
 
-  border-radius: 16px;
+  border-radius: 1rem;
+
+  cursor: pointer;
 }
 
 .description__fooddie {
@@ -212,4 +216,82 @@ body {
 
 .description__fooddie > .discount {
   color: #fd6d22;
+}
+
+.container__categorys {
+  display: flex;
+
+  gap: 1.875rem;
+
+  margin-top: 2rem;
+  margin-left: 10.3125rem;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 10rem;
+  height: 5rem;
+
+  border: 0.0625rem solid #edeef2;
+
+  border-radius: 1rem;
+
+  cursor: pointer;
+}
+
+.category > p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+  color: #545563;
+
+  margin-top: 0.75rem;
+}
+
+.category:hover {
+  background-color: #f8f9ff;
+
+  border: 0.0625rem solid #697bff;
+}
+
+.category:active {
+  background-color: #f3f4ff;
+
+  border: 0.125rem solid #4e60ff;
+}
+
+main > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #2b2b43;
+
+  padding-left: 165px;
+  margin-top: 40px;
+}
+
+.container__restaurants {
+  display: flex;
+
+  margin-top: 16px;
+  margin-left: 165px;
+}
+
+.restaurant {
+
+}
+
+.restaurant > h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.01px;
+  color: #2b2b43;
+
+  margin-top: 16px;
+  margin-left: 16px;
 }
