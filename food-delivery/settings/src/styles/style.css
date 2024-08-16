@@ -147,7 +147,7 @@ body {
 }
 
 .container__settings {
-  width: 35%;
+  width: 28%;
 
   margin-top: 24px;
   margin-left: 165px;
@@ -224,4 +224,115 @@ body {
   line-height: 18px;
   letter-spacing: 0.02px;
   color: #545563;
+}
+
+.container__account {
+  margin-top: 24px;
+}
+
+.container__account > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.01px;
+  color: #2b2b43;
+}
+
+.container__content {
+  height: 480px;
+  width: 730px;
+
+  border: 1px solid #edeef2;
+  border-radius: 16px;
+
+  margin-top: 16px;
+}
+
+.container__content > h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.01px;
+  color: #2b2b43;
+
+  padding: 24px 0 0 16px;
+}
+
+.sym__avatar {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #545563;
+
+  padding: 16px 0 0 16px;
+}
+
+.change__avatar {
+  display: flex;
+  align-items: center;
+}
+
+.change__avatar > img {
+  width: 88px;
+  height: 88px;
+
+  border-radius: 12px;
+
+  margin-top: 8px;
+  margin-left: 16px;
+}
+
+.btn__change {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  line-height: 0.03px;
+  color: #83859c;
+
+  border: none;
+
+  width: 83px;
+  height: 44px;
+
+  background-color: transparent;
+
+  margin-left: 24px;
+
+  cursor: pointer;
+}
+
+.btn__change:hover {
+  color: #4e60ff;
+
+  border: 1px solid #4e60ff;
+  border-radius: 8px;
+}
+
+.btn__remove {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  line-height: 0.03px;
+  color: #83859c;
+
+  border: none;
+
+  width: 83px;
+  height: 44px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.btn__remove:hover {
+  color: #4e60ff;
+
+  border: 1px solid #4e60ff;
+  border-radius: 8px;
+}
+
+.container__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
