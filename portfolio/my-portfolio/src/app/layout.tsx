@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import "./globals.scss";
 
 const poppins = Poppins({
-  weight: ["400", "700"],
+  weight: ["300", "600"],
   subsets: ["latin"],
   variable: "--font-poppins",
 });
