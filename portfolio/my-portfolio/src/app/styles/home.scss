@@ -1,0 +1,28 @@
+.container__main {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header"
+    "btns"
+    "experience"
+    "info";
+
+  padding: 40px 32px;
+}
+
+@media (min-width: 768px) {
+  .container__main {
+    grid-template-rows: fit-content(100%);
+    grid-template-columns: 60% 30%;
+    grid-template-areas:
+    "header info"
+    "experience empty"
+    "empty-2 btns";
+    height: 100vh;
+    align-items: center;
+    justify-items: start;
+    justify-content: space-between;
+
+    padding: 70px 60px;
+  }
+}

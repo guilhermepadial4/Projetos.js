@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { Header } from "./components/header/header";
+import "./styles/home.scss";
 
 export default function Home() {
   return (
-    <main>
-      <Header/>
+    <main className="container__main">
+      <Header />
 
       <div className="experice">
         <h3>Experience</h3>
@@ -31,9 +32,7 @@ export default function Home() {
         </div>
 
         <div className="buttons">
-          <div className="social">
-
-          </div>
+          <div className="social"></div>
 
           <button>contact me</button>
         </div>
