@@ -9,6 +9,32 @@
     "info";
 
   padding: 40px 32px;
+
+  .btn__primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.25rem;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    text-align: center;
+
+    width: 20.3125rem;
+
+    background: linear-gradient(90deg, #777cf4 2.62%, #f47777 93.38%);
+
+    border: none;
+    border-radius: 1.5rem;
+
+    padding: 0.75rem;
+
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 768px) {
@@ -16,9 +42,9 @@
     grid-template-rows: fit-content(100%);
     grid-template-columns: 60% 30%;
     grid-template-areas:
-    "header info"
-    "experience empty"
-    "empty-2 btns";
+      "header info"
+      "experience empty"
+      "empty-2 btns";
     height: 100vh;
     align-items: center;
     justify-items: start;

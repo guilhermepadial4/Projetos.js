@@ -1,12 +1,13 @@
-import "information.scss";
+import { SectionTitle } from "../sectionTitle/section-title";
+import "./information.scss";
 
 import Image from "next/image";
 
 export function Info() {
   return (
     <div className="infos">
-      <h3>Languages</h3>
-      <div className="languages-info">
+      <SectionTitle text="Languages" />
+      <div className="languages__info">
         <span>
           <Image src="/flag-usa.svg" alt="Flag USA" width={30} height={38} priority /> - EN Fluent
         </span>
@@ -15,7 +16,7 @@ export function Info() {
         </span>
       </div>
 
-      <h3>Education</h3>
+      <SectionTitle text="Education" />
       <div className="education-info">
         <span>🎓</span>
         <span>Análise e Desenvolvimento de Sistemas - Faculdade das Americas - FMU</span>
