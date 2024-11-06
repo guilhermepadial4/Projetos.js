@@ -1,0 +1,19 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  gap: 1.5rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 3.125rem;
+    width: 3.125rem;
+    
+
+    border: .0938rem solid #fff;
+    border-radius: 100%;
+  }
+}

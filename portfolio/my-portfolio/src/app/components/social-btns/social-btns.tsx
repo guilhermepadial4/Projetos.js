@@ -3,6 +3,8 @@ import { LinkedinIcon } from "../icons/linkedin-icon";
 import { GithubIcon } from "../icons/github-icon";
 import { XIcon } from "../icons/x-icon";
 
+import "./social-btns.scss";
+
 export function SocialBtns() {
   return (
     <div className="social">

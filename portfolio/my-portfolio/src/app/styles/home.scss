@@ -1,5 +1,6 @@
 .container__main {
   display: grid;
+  justify-items: center;
   gap: 1.5rem;
   grid-template-rows: repeat(4, auto);
   grid-template-areas:
@@ -9,6 +10,19 @@
     "info";
 
   padding: 40px 32px;
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    grid-area: btns;
+
+    gap: 1.5rem;
+
+    width: 100%;
+  }
 
   .btn__primary {
     display: flex;
@@ -23,6 +37,7 @@
     text-transform: uppercase;
     color: var(--text-primary);
     text-align: center;
+    text-decoration: none;
 
     width: 20.3125rem;
 
@@ -39,17 +54,17 @@
 
 @media (min-width: 768px) {
   .container__main {
-    grid-template-rows: fit-content(100%);
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: 60% 30%;
     grid-template-areas:
       "header info"
-      "experience empty"
-      "empty-2 btns";
+      "experience btns"
+      "empty empty";
+
     height: 100vh;
-    align-items: center;
+    align-items: start;
     justify-items: start;
     justify-content: space-between;
-
     padding: 70px 60px;
   }
 }
