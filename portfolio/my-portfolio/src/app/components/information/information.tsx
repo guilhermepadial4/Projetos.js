@@ -9,10 +9,10 @@ export function Info() {
       <SectionTitle text="Languages" />
       <div className="languages__info">
         <span>
-          <Image src="/flag-usa.svg" alt="Flag USA" width={30} height={38} priority /> - EN Fluent
+          <Image src="/flag-us.svg" alt="Flag USA" width={20} height={20} priority /> EN Fluent
         </span>
         <span>
-          <Image src="/flag-brazil.svg" alt="Flag Brazil" width={30} height={38} priority /> - PT-BR Native Speaker
+          <Image src="/flag-br.svg" alt="Flag Brazil" width={20} height={20} priority /> PT-BR Native Speaker
         </span>
       </div>
 

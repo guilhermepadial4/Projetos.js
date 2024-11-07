@@ -11,7 +11,7 @@ export function Experience() {
 
       <div className="experience__time">
         <div className="experience__languages">
-          <Image src="/react.png" alt="React logo" width={40} height={40} priority />
+          <Image src="/react2.svg" alt="React logo" width={45} height={45} priority />
           <div className="experience__unit">
             <div className="experience__measure measure-2">
               <span>2 years</span>
@@ -20,7 +20,7 @@ export function Experience() {
         </div>
 
         <div className="experience__languages">
-          <Image src="/js.png" alt="Javascriot logo" width={40} height={40} priority />
+          <Image src="/js.svg" alt="Javascriot logo" width={40} height={40} priority />
           <div className="experience__unit">
             <div className="experience__measure measure-3">
             <span>3 years</span>
@@ -29,7 +29,7 @@ export function Experience() {
         </div>
 
         <div className="experience__languages">
-          <Image src="/ts.png" alt="Javascriot logo" width={40} height={40} priority />
+          <Image src="/ts.svg" alt="Javascriot logo" width={40} height={40} priority />
           <div className="experience__unit">
             <div className="experience__measure measure-1">
             <span>1 year</span>
